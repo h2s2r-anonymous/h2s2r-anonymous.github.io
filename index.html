@@ -107,7 +107,8 @@
               to define an object-centric, embodiment-agnostic reward function, and (2) the pre-manipulation hand pose
               to initialize and guide exploration during RL training. We found that these two components are highly
               effective for learning the desired task, eliminating the need for task-specific reward shaping and tuning.
-              We demonstrate that <span class="dnerf">Human2Sim2Robot</span> significantly outperforms trajectory retargeting and one-shot
+              We demonstrate that <span class="dnerf">Human2Sim2Robot</span> significantly outperforms trajectory
+              retargeting and one-shot
               imitation learning across a wide range of tasks, including grasping, non-prehensile manipulation, and
               extrinsic manipulation.
             </p>
@@ -272,7 +273,7 @@
             </video>
           </div>
         </div>
-    <!--Sim Videos.-->
+        <!--Sim Videos.-->
   </section>
 
   <section class="section">
@@ -300,7 +301,7 @@
               </li>
             </ul>
           </div>
-          
+
           <h2 class="title is-4">Distractor Objects, Perturbations, and Background Changes</h2>
           <div class="t">
             <ul>
@@ -330,7 +331,7 @@
               </li>
             </ul>
           </div>
-          
+
           <div class="t">
             <ul>
               <li class="robust-perturb-item">
@@ -554,7 +555,8 @@
                 <h2 class="title is-4">Baseline</h2>
                 <div class="item-OOD">
                   <video poster="" id="plate-lift-rack" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/baseline_replay/robust/snackbox_OODposition1_fail.mov" type="video/mp4">
+                    <source src="./static/videos/baseline_replay/robust/snackbox_OODposition1_fail.mov"
+                      type="video/mp4">
                   </video>
                 </div>
               </li>
@@ -568,14 +570,15 @@
               </li>
             </ul>
             <ul>
-              <li> 
+              <li>
                 <div class="item-OOD">
                   <video poster="" id="plate-lift-rack" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/baseline_replay/robust/snackbox_OODposition3_fail.mov" type="video/mp4">
+                    <source src="./static/videos/baseline_replay/robust/snackbox_OODposition3_fail.mov"
+                      type="video/mp4">
                   </video>
                 </div>
               </li>
-              <li> 
+              <li>
                 <div class="item-OOD">
                   <video poster="" id="pitcher-pour" autoplay controls muted loop playsinline height="100%">
                     <source src="./static/videos/robot_vids/robust/snackbox_OODposition3_success.mov" type="video/mp4">
@@ -590,127 +593,127 @@
     </section>
 
 
-  <section class="section">
-    <div class="container is-max-desktop">
-      <!-- Ablation Videos. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column">
-          <h2 class="title is-2">Ablation Tests</h2>
-          
-          <h2 class="title is-4">Importance of Object Trajectory Tracking Rewards</h2>
-          <div class="t">
-            <ul>
-              <li class="ablation-obj-item">
-                <h4>Fixed Target</h4>
-                <div class="obj-traj-track">
-                  <video poster="" id="fixed" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/ablations/fixed_target.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </li>
-              <li class="ablation-obj-item">
-                <h4>Interpolated Target</h4>
-                <div class="obj-traj-track">
-                  <video poster="" id="interpolated" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/ablations/interpolated_target.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </li>
-              <li class="ablation-obj-item">
-                <h4>Downsampled Trajectory</h4>
-                <div class="obj-traj-track">
-                  <video poster="" id="downsampled" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/ablations/downsampled_trajectory.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </li>
-              <li class="ablation-obj-item">
-                <h4><b>Ours</b></h4>
-                <div class="ours">
-                  <video poster="" id="our" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/ablations/ours.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </li>
-            </ul>
-          </div>
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Ablation Videos. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-2">Ablation Tests</h2>
 
-          <h2 class="title is-4">Importance of Pre-Manipulation Pose Initialization</h2>
-          <div class="t">
-            <ul>
-              <li class="ablation-premanip-item">
-                <h4>Default Initialization</h4>
-                <div class="pre-manip">
-                  <video poster="" id="default" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/ablations/default_init.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </li>
-              <li class="ablation-premanip-item">
-                <h4>Overhead Initialization</h4>
-                <div class="pre-manip">
-                  <video poster="" id="overhead" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/ablations/overhead_init.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </li>
-              <li class="ablation-premanip-item">
-                <h4>Pre-Manipulation Far</h4>
-                <div class="pre-manip">
-                  <video poster="" id="premanip_far" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/ablations/premanip_far.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </li>
-              <li class="ablation-premanip-item">
-                <h4><b>Ours</b></h4>
-                <div class="ours">
-                  <video poster="" id="our" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/ablations/ours.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </li>
-            </ul>
-          </div>
+            <h2 class="title is-4">Importance of Object Trajectory Tracking Rewards</h2>
+            <div class="t">
+              <ul>
+                <li class="ablation-obj-item">
+                  <h4>Fixed Target</h4>
+                  <div class="obj-traj-track">
+                    <video poster="" id="fixed" autoplay controls muted loop playsinline>
+                      <source src="./static/videos/ablations/fixed_target.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </li>
+                <li class="ablation-obj-item">
+                  <h4>Interpolated Target</h4>
+                  <div class="obj-traj-track">
+                    <video poster="" id="interpolated" autoplay controls muted loop playsinline>
+                      <source src="./static/videos/ablations/interpolated_target.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </li>
+                <li class="ablation-obj-item">
+                  <h4>Downsampled Trajectory</h4>
+                  <div class="obj-traj-track">
+                    <video poster="" id="downsampled" autoplay controls muted loop playsinline>
+                      <source src="./static/videos/ablations/downsampled_trajectory.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </li>
+                <li class="ablation-obj-item">
+                  <h4><b>Ours</b></h4>
+                  <div class="ours">
+                    <video poster="" id="our" autoplay controls muted loop playsinline>
+                      <source src="./static/videos/ablations/ours.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
-          <h2 class="title is-4">Sufficiency of Single Pre-Manipulation Hand Pose</h2>
-          <div class="t">
-            <ul>
-              <li class="ablation-suff-item">
-                <h4>Hand-Trajectory Tracking Rewards</h4>
-                <div class="sufficiency">
-                  <video poster="" id="hand-tracking" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/ablations/hand_tracking.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </li>
-              <li class="ablation-suff-item">
-                <h4>Residual Policy</h4>
-                <div class="sufficiency">
-                  <video poster="" id="residual" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/ablations/residual_policy.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </li>
-              <li class="ablation-suff-item">
-                <h4><b>Ours</b></h4>
-                <div class="ours">
-                  <video poster="" id="our" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/ablations/ours.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </li>
-            </ul>
-          </div>
+            <h2 class="title is-4">Importance of Pre-Manipulation Pose Initialization</h2>
+            <div class="t">
+              <ul>
+                <li class="ablation-premanip-item">
+                  <h4>Default Initialization</h4>
+                  <div class="pre-manip">
+                    <video poster="" id="default" autoplay controls muted loop playsinline>
+                      <source src="./static/videos/ablations/default_init.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </li>
+                <li class="ablation-premanip-item">
+                  <h4>Overhead Initialization</h4>
+                  <div class="pre-manip">
+                    <video poster="" id="overhead" autoplay controls muted loop playsinline>
+                      <source src="./static/videos/ablations/overhead_init.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </li>
+                <li class="ablation-premanip-item">
+                  <h4>Pre-Manipulation Far</h4>
+                  <div class="pre-manip">
+                    <video poster="" id="premanip_far" autoplay controls muted loop playsinline>
+                      <source src="./static/videos/ablations/premanip_far.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </li>
+                <li class="ablation-premanip-item">
+                  <h4><b>Ours</b></h4>
+                  <div class="ours">
+                    <video poster="" id="our" autoplay controls muted loop playsinline>
+                      <source src="./static/videos/ablations/ours.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
+            <h2 class="title is-4">Sufficiency of Single Pre-Manipulation Hand Pose</h2>
+            <div class="t">
+              <ul>
+                <li class="ablation-suff-item">
+                  <h4>Hand-Trajectory Tracking Rewards</h4>
+                  <div class="sufficiency">
+                    <video poster="" id="hand-tracking" autoplay controls muted loop playsinline>
+                      <source src="./static/videos/ablations/hand_tracking.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </li>
+                <li class="ablation-suff-item">
+                  <h4>Residual Policy</h4>
+                  <div class="sufficiency">
+                    <video poster="" id="residual" autoplay controls muted loop playsinline>
+                      <source src="./static/videos/ablations/residual_policy.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </li>
+                <li class="ablation-suff-item">
+                  <h4><b>Ours</b></h4>
+                  <div class="ours">
+                    <video poster="" id="our" autoplay controls muted loop playsinline>
+                      <source src="./static/videos/ablations/ours.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
         </div>
+        <!--/ Ablation Videos. -->
       </div>
-      <!--/ Ablation Videos. -->
-    </div>
-  </section>
+    </section>
 
-  
-  <!--
+
+    <!--
   <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
@@ -726,7 +729,7 @@
   </section>
   -->
 
-  <!--
+    <!--
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
@@ -742,19 +745,19 @@
 
 
 
-  <footer class="footer">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content has-text-centered">
-            <p>
-              Website template by <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
-            </p>
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content has-text-centered">
+              <p>
+                Website template by <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
 </body>
 
